@@ -1,4 +1,4 @@
-personalpersonalDROP DATABASE IF EXISTS eben_ezer;
+DROP DATABASE IF EXISTS eben_ezer;
 CREATE DATABASE eben_ezer;
 
 USE eben_ezer;
