@@ -4,14 +4,6 @@ CREATE DATABASE eben_ezer;
 USE eben_ezer;
 
 -- CREACIÓN DE TABLAS
-
-CREATE TABLE eben_ezer.producto(
-id_producto INT NOT NULL auto_increment PRIMARY KEY,
-nombre varchar(100) NOT NULL,
-descripcion varchar(100) NOT NULL,
-precio decimal NOT NULL,
-unidad_medida varchar(10) NOT NULL);
-
 CREATE TABLE eben_ezer.materia_prima(
 id_materia_prima INT NOT NULL auto_increment PRIMARY KEY,
 descripcion varchar(100) NOT NULL,
@@ -22,6 +14,13 @@ id_proveedor INT NOT NULL auto_increment PRIMARY KEY,
 cuit int NOT NULL,
 razon_social varchar(100) NOT NULL,
 encargado varchar(50) NOT NULL);
+
+CREATE TABLE eben_ezer.producto(
+id_producto INT NOT NULL auto_increment PRIMARY KEY,
+nombre varchar(100) NOT NULL,
+descripcion varchar(100) NOT NULL,
+precio decimal NOT NULL,
+unidad_medida varchar(10) NOT NULL);
 
 CREATE TABLE eben_ezer.categoria_personal(
 id_categoria INT NOT NULL auto_increment PRIMARY KEY,
