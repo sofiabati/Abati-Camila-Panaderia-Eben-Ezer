@@ -59,6 +59,12 @@ id_producto int NOT NULL,
 id_materia_prima int NOT NULL,
 cantidad decimal NOT NULL);
 
+CREATE TABLE eben_ezer.producto_venta(
+id_producto_venta INT NOT NULL auto_increment PRIMARY KEY,
+id_producto int NOT NULL,
+id_venta int NOT NULL,
+cantidad decimal NOT NULL);
+
 CREATE TABLE eben_ezer.venta(
 id_venta INT NOT NULL auto_increment PRIMARY KEY,
 id_producto int NOT NULL,
@@ -66,12 +72,6 @@ id_cliente int NOT NULL,
 id_personal int NOT NULL,
 id_local int NOT NULL,
 fecha datetime default(current_timestamp));
-
-CREATE TABLE eben_ezer.producto_venta(
-id_producto_venta INT NOT NULL auto_increment PRIMARY KEY,
-id_producto int NOT NULL,
-id_venta int NOT NULL,
-cantidad decimal NOT NULL);
 
 -- AGREGA FK
 
